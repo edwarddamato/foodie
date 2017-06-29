@@ -1,6 +1,6 @@
 import express from 'express';
 import { buildRoutes } from '../builder';
-import apiUser from '../../routes/api/user';
+import apiUser from '../../routes/api/meals';
 
 describe('buildRoutes', () => {
   it('should apply the given route on the express application', () => {

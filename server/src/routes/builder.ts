@@ -1,4 +1,4 @@
-import { RouteAction, Route } from '../routes/interfaces.d';
+import { RouteAction, Route } from '../types/routes';
 import * as express from 'express';
 
 const buildRoutes = (app: express.Application, routes: Array<Route>): express.Application => {
