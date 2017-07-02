@@ -1,0 +1,10 @@
+@import "../../styles/base";
+
+.component {
+  &_user-select {
+    &-item {
+      display: inline-block;
+      margin: 0 .5rem;
+    }
+  }
+}

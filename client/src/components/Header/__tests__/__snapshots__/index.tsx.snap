@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<header
+  className="component_header"
+>
+  <h1
+    className="component_header-title"
+  >
+    foodie
+  </h1>
+</header>
+`;

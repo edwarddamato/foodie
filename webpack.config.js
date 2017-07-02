@@ -2,7 +2,7 @@ const path = require('path');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const HtmlWebpackPluginConfig = new HtmlWebpackPlugin({
-  template: './src/index.html',
+  template: './client/src/index.html',
   filename: 'index.html',
   inject: 'body'
 });
@@ -10,7 +10,7 @@ const HtmlWebpackPluginConfig = new HtmlWebpackPlugin({
 const SOURCE = /src/;
 
 module.exports = {
-  entry: './src/index.tsx',
+  entry: './client/src/index.tsx',
   output: {
     filename: 'bundle.js',
   },

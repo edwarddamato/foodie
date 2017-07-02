@@ -1,0 +1,20 @@
+@import "../../styles/base";
+
+.component {
+  &_header {
+    margin: 2rem;
+      display: inline-block;
+      border: 5px solid $primary-color;
+      padding: 1rem 1.5rem;
+
+    &-title,
+    &-subtitle {
+      margin: 0;
+    }
+
+    &-subtitle {
+      color: $secondary-color;
+      font-weight: 100;
+    }
+  }
+}

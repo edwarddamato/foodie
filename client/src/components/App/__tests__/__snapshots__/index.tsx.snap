@@ -1,0 +1,48 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  className="root_container"
+>
+  <header
+    className="component_header"
+  >
+    <h1
+      className="component_header-title"
+    >
+      foodie
+    </h1>
+  </header>
+  <section
+    className="component_user-select"
+  >
+    <div
+      className="component_user-select-title"
+    >
+      What are you?
+    </div>
+    <ul
+      className="component_user-select-types"
+    >
+      <li
+        className="component_user-select-item"
+      >
+        <button
+          className="component_user-select-button"
+        >
+          I'm a chef!
+        </button>
+      </li>
+      <li
+        className="component_user-select-item"
+      >
+        <button
+          className="component_user-select-button"
+        >
+          I'm hungry!
+        </button>
+      </li>
+    </ul>
+  </section>
+</div>
+`;

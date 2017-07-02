@@ -3,10 +3,12 @@
   "version": "0.0.1",
   "description": "foodie",
   "scripts": {
-    "start": "webpack-dev-server",
-    "test": "jest --verbose",
-    "test:server": "jest --runInBand --no-cache --verbose --config=server/jest.config.json",
-    "server": "tsc -p server/tsconfig.json && babel-node server/dist/src/index.js"
+    "start": "",
+    "start:client": "webpack-dev-server",
+    "start:server": "tsc -p server/tsconfig.json && babel-node server/dist/src/index.js",
+    "test": "yarn test:server",
+    "test:client": "jest --runInBand --no-cache --verbose --config=client/jest.config.json",
+    "test:server": "jest --runInBand --no-cache --verbose --config=server/jest.config.json"
   },
   "main": "index.js",
   "repository": "git@github.com:edwarddamato/foodie.git",
@@ -18,7 +20,8 @@
     "body-parser": "^1.17.1",
     "express": "^4.15.3",
     "react": "^15.5.4",
-    "react-dom": "^15.5.4"
+    "react-dom": "^15.5.4",
+    "redux": "^3.7.1"
   },
   "devDependencies": {
     "@types/body-parser": "^1.16.1",

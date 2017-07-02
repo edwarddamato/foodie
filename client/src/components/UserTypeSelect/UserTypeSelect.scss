@@ -1,0 +1,22 @@
+@import "../../styles/base";
+
+.component {
+  &_user-select {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+
+    &-title {
+      color: $secondary-color;
+      font-weight: 600;
+      font-size: 3rem;
+    }
+
+    &-types {
+      list-style: none;
+      text-align: center;
+      margin-top: 1rem;
+    }
+  }
+}
