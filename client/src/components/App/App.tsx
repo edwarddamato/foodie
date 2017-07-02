@@ -1,13 +1,27 @@
 import * as React from 'react';
-// import { IUser } from '../../api/github/interfaces.d';
-// import { Github } from '../../api/github/index';
+import { Store } from '../../store';
+import { NoUser, IUserType } from '../../store/types';
 import { UserTypeSelect } from '../UserTypeSelect';
 import { Header } from '../Header'
 import './App.scss';
 
-export class App extends React.Component<null, null> {
+interface IAppState {
+  readonly currentUser: IUserType
+}
+
+export class App extends React.Component<null, IAppState> {
   constructor (props: undefined) {
     super(props);
+
+    this.state = {
+      currentUser: NoUser
+    };
+
+    Store.Subscribe(() => {
+      this.setState({
+        currentUser: Store.GetCurrentUserType()
+      });
+    });
   }
 
   // private async getUser () {
@@ -23,7 +37,9 @@ export class App extends React.Component<null, null> {
     return (
       <div className="root_container">
         <Header />
-        <UserTypeSelect />
+        {
+          this.state.currentUser === NoUser ? <UserTypeSelect /> : null
+        }
       </div>
     );
   }

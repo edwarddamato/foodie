@@ -3,9 +3,13 @@
 .component {
   &_header {
     margin: 2rem;
-      display: inline-block;
-      border: 5px solid $primary-color;
-      padding: 1rem 1.5rem;
+    display: inline-block;
+    border: 5px solid $primary-color;
+    padding: 1rem 1.5rem;
+
+    &-container {
+      overflow: auto;
+    }
 
     &-title,
     &-subtitle {
@@ -15,6 +19,25 @@
     &-subtitle {
       color: $secondary-color;
       font-weight: 100;
+      float: left;
+    }
+
+    &-reset {
+      display: inline-block;
+      color: $white;
+      font-weight: 400;
+      font-size: 0.7rem;
+      line-height: 0.7rem;
+      background-color: $secondary-color;
+      border-radius: 50%;
+      cursor: pointer;
+      padding: 0.3rem 0.5rem;
+      margin-top: 0.25rem;
+      margin-left: 0.25rem;
+
+      &:before {
+        content: 'x';
+      }
     }
   }
 }

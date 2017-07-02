@@ -16,7 +16,6 @@ export class UserTypeSelectItem extends React.Component<IUserTypeSelectItemProps
   }
 
   private handleClick(e: React.SyntheticEvent<HTMLButtonElement>): void {
-    console.trace(this.props.userType);
     Store.Dispatch(UserTypeSelectAction, this.props.userType);
   }
 
