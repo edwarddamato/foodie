@@ -2,6 +2,7 @@ import express from 'express';
 import { json, urlencoded } from 'body-parser';
 import { buildRoutes } from './routes/builder';
 import apiMeals from './routes/api/meals';
+import apiDietaryRequirements from './routes/api/dietaryRequirements';
 
 const app: express.Application = express();
 
@@ -16,7 +17,7 @@ app.use(json());
 app.use(urlencoded({ extended: true }));
 
 
-buildRoutes(app, [apiMeals]);
+buildRoutes(app, [apiMeals, apiDietaryRequirements]);
 
 app.listen(4000, () => {
   console.log('Node server listening on http://localhost:4000');
