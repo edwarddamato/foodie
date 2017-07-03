@@ -1,7 +1,8 @@
 import * as React from 'react';
 import { Store } from '../../store';
-import { NoUser, IUserType } from '../../store/types';
+import { NoUser, ConsumerUser, ChefUser, IUserType } from '../../store/types';
 import { UserTypeSelect } from '../UserTypeSelect';
+import { ConsumerArea } from '../ConsumerArea';
 import { Header } from '../Header'
 import './App.scss';
 
@@ -33,12 +34,23 @@ export class App extends React.Component<null, IAppState> {
     // this.getUser();
   }
 
+  private getUserTypeArea() {
+    switch(this.state.currentUser) {
+      case NoUser:
+        return <UserTypeSelect />
+      case ChefUser:
+        return null;
+      case ConsumerUser:
+        return <ConsumerArea />
+    }
+  }
+
   render () {
     return (
       <div className="root_container">
         <Header />
         {
-          this.state.currentUser === NoUser ? <UserTypeSelect /> : null
+          this.getUserTypeArea()
         }
       </div>
     );

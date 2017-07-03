@@ -1,0 +1,40 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<section
+  className="component_consumer"
+>
+  <div
+    className="form consumer_form"
+  >
+    <div
+      className="form_field consumer_form-field"
+    >
+      <label
+        className="form_field-label"
+        htmlFor="txtConsumerName"
+      >
+        Your Name:
+      </label>
+      <input
+        className="form_field-input"
+        id="txtConsumerName"
+        onChange={[Function]}
+        placeholder="E.g. Bob Smith"
+        type="text"
+        value=""
+      />
+    </div>
+    <div
+      className="form_field consumer_form-field"
+    >
+      <label
+        className="form_field-label"
+        htmlFor="txtConsumerName"
+      >
+        Your Food Requirements:
+      </label>
+    </div>
+  </div>
+</section>
+`;

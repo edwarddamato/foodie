@@ -29,8 +29,9 @@ exports[`renders correctly 1`] = `
       >
         <button
           className="component_user-select-button"
+          onClick={[Function]}
         >
-          I'm a chef!
+          Consumer
         </button>
       </li>
       <li
@@ -38,8 +39,9 @@ exports[`renders correctly 1`] = `
       >
         <button
           className="component_user-select-button"
+          onClick={[Function]}
         >
-          I'm hungry!
+          Chef
         </button>
       </li>
     </ul>

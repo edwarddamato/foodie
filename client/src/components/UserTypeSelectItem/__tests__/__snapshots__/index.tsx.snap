@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<li
+  className="component_user-select-item"
+>
+  <button
+    className="component_user-select-button"
+    onClick={[Function]}
+  >
+    Chef
+  </button>
+</li>
+`;

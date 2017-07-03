@@ -19,3 +19,6 @@ export const ChefUser: IUserType = {
 export const ConsumerUser: IUserType = {
   type: 'Consumer'
 };
+export interface IDietaryRequirement {
+  readonly requirement: string;
+};
