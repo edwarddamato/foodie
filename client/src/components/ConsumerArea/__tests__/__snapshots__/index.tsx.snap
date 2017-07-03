@@ -25,16 +25,6 @@ exports[`renders correctly 1`] = `
         value=""
       />
     </div>
-    <div
-      className="form_field consumer_form-field"
-    >
-      <label
-        className="form_field-label"
-        htmlFor="txtConsumerName"
-      >
-        Your Food Requirements:
-      </label>
-    </div>
   </div>
 </section>
 `;

@@ -6,7 +6,7 @@
     "start": "",
     "start:client": "webpack-dev-server",
     "start:server": "tsc -p server/tsconfig.json && babel-node server/dist/src/index.js",
-    "test": "yarn test:server",
+    "test": "yarn test:server && yarn test:client",
     "test:client": "jest --runInBand --no-cache --verbose --config=client/jest.config.json",
     "test:server": "jest --runInBand --no-cache --verbose --config=server/jest.config.json"
   },
