@@ -1,5 +1,3 @@
-jest.mock('../../api/foodie');
-
 import * as React from 'react';
 import { Store } from '../../store';
 import { UserTypeSelectAction } from '../../store/actions';

@@ -1,3 +1,4 @@
+jest.mock('../../api/foodie');
 import * as React from 'react';
 import { ConsumerArea } from '../';
 import { create } from 'react-test-renderer';
